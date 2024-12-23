@@ -20,7 +20,7 @@ Deskripsi Website: Website ini merupakan sebuah website Barbershop yang juga men
 </ul>
 
 <p align="center">
-  <img src="../img/1.png" alt="Sign Up" />
+  <img src="./img/1.png" alt="Sign Up" />
 </p>
 
 <ul>
