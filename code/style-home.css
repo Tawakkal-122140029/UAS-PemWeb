@@ -1,0 +1,310 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of CSS Reset */
+
+/* Style Umum */
+*{
+    color: #fff;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: monospace;
+    font-size: 16px;
+    background-color: #000;
+}
+
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section{
+    margin: 20px 0 70px 0;
+}
+
+/* Akhir Style Umum */
+
+/* Style Navbar */
+#navbar{
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2c2c2c;
+    padding: 3px 0;
+
+}
+
+.nav h1{
+    text-align: center;
+    font-size: 28px;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav img{
+    width: 80px;
+    border-radius: 50%;
+}
+/* Akhir Style Navbar */
+
+/* Style Services */
+.pre-title{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    position: relative;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: 40px;
+}
+
+.pre-title::before{
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: #f5f5f5;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+
+.section-title{
+    margin-top: 10px;
+}
+
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 210px);
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 20px;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 240px;
+    background-color: #6e6e6e;
+    padding: 5px 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 2s cubic-bezier(.165, .84, .44, 1);
+}
+
+.service:hover{
+    transform: scale3d(1.010, 1.010, 1);
+}
+
+.service img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.service-title h4{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 5px;
+    color: #e0e0e0;
+}
+/* Akhir Style Services */
+
+/* Style Book */
+.list-book{
+    margin: 20px 0
+}
+
+.list-book h1{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.table-book{
+    width: 70%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+.table-book th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.table-book th {
+    font-weight: bold;
+}
+
+.book{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book button{
+    color: #fff;
+    font-weight: bold;
+    width: 20%;
+    background-color: #2c2c2c;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background-color: #2c2c2c;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h3{
+    text-align: center;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.form-container input, .form-container select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container input{
+    color: #6e6e6e;
+}
+
+.form-container select {
+    color: #6e6e6e;
+    background-color: #fff; /* Warna latar belakang dropdown */
+}
+
+.form-container select option{
+    color: #6e6e6e;
+}
+
+.form-container button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #6e6e6e;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-container button:hover {
+    background-color: #5a5a5a;
+}
+
+/* Tambahkan animasi untuk form booking */
+.form-container {
+    opacity: 0; /* Form awalnya tidak terlihat */
+    transform: translateY(-20px); /* Posisi awal sedikit ke atas */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transisi untuk animasi */
+}
+
+.form-container.active {
+    opacity: 1; /* Form terlihat */
+    transform: translateY(0); /* Form kembali ke posisi normal */
+}
+/* Akhir Style Book */
+
+/* Style Cookie */
+.cookie-area{
+    margin: 16px 0;
+}
+
+.cookie-area input, button{
+    background-color: transparent;
+    border: solid 1px #ddd;
+    padding: 3px 5px;
+}
+
+.cookie-area button{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.cookie-area button:hover{
+    background-color: #2c2c2c;
+}
+/* Akhir Style Cookie */

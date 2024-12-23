@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url(../img/background.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 530px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.inputbox, .inputfile{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputfile{
+    height: 52px;
+}
+
+.inputfile input{
+    margin-top: 20px;
+}
+
+.inputbox label, .inputfile label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 12px;
+    pointer-events: none;
+    transition: all .5s ease;
+}
+
+.inputfile label{
+    top: -10px;
+}
+
+input:focus ~ label, input:valid ~ label{
+    top: -1px;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+button{
+    width: 100%;
+    height: 30px;
+    border-radius: 40px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
